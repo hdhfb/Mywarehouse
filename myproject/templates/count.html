@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>您输入的文字：</h1>
+	<p>{{ text }}</p>
+	<br>
+	<h1>字频统计：</h1>
+	<br>
+	{% for word,count in sorted_dict %}
+	{{ word }} - {{count}}	
+	{% endfor %}
+</body>
+</html>
